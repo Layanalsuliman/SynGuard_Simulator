@@ -63,3 +63,9 @@ sudo python3 sim.py
 ```
 ## 📃 Note on SYN Flooding Simulation
 Instead of sending a fixed number of packets, our SYN flooding module uses multiple threads to simulate concurrent connection attempts—this approach better mimics a real-world DoS scenario where numerous machines or bots flood a server simultaneously. Thread-based simulation increases CPU/memory pressure on the server more realistically than simple looped packet spamming.
+
+## 📂 Directory Structure
+SYNGuard-Simulator/
+├── sim.py                # Main launcher and interactive menu
+├── Ourmethodology.png    # Diagram of enhanced TCP handshake
+└── README.md
