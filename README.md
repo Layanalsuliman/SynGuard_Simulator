@@ -47,6 +47,11 @@ This simulator uses an HMAC-based SYN cookie computation of the form:
 ```python
 SYN_Cookie = HMAC(Secret_Key, Client_IP || Client_Port || Timestamp)
 ```
+- Server remains **stateless**
+- Nonce prevents **replay attacks**
+- Cookie verified upon **ACK** reception
+- No server-side memory allocation before full handshake
+
 ##  Usage Instructions
 
 # Clone 
