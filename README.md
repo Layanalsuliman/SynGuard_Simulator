@@ -52,8 +52,9 @@ SYN_Cookie = HMAC(Secret_Key, Client_IP || Client_Port || Timestamp)
 - Cookie verified upon **ACK** reception
 - No server-side memory allocation before full handshake
 
-
-![Enhanced Three-Way Handshake with Nonce and HMAC](syn_img.jpg)
+<p align="center">
+  <img src="syn_resized.jpg" alt="Enhanced Three-Way Handshake" width="500"/>
+</p>
 
 
 ##  Usage Instructions
