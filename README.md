@@ -4,7 +4,7 @@ SYNGuard Simulator is an educational tool designed to demonstrate an enhanced SY
 
 ---
 
-## 🔧 Features
+##  Features
 
 - **Start SYN Cookie Server**: Listens for SYN requests and replies with HMAC + Nonce-based SYN cookies.
 - **Run Legitimate Client**: Sends a proper SYN and completes the three-way handshake using enhanced cookies.
@@ -15,7 +15,7 @@ SYNGuard Simulator is an educational tool designed to demonstrate an enhanced SY
 
 ---
 
-## 🌟 Educational Purpose
+##  Educational Purpose
 
 This tool is meant for cybersecurity students, researchers, and hobbyists looking to better understand:
 
@@ -26,7 +26,7 @@ This tool is meant for cybersecurity students, researchers, and hobbyists lookin
 
 ---
 
-## 🧪 Environment Setup
+##  Environment Setup
 
 - **Python Version**: 3.10+
 - **Libraries**:
@@ -40,14 +40,14 @@ This tool is meant for cybersecurity students, researchers, and hobbyists lookin
 
 ---
 
-## 🧠 How the Method Works
+##  How the Method Works
 
 This simulator uses an HMAC-based SYN cookie computation of the form:
 
 ```python
 SYN_Cookie = HMAC(Secret_Key, Client_IP || Client_Port || Timestamp)
 ```
-## 🛠️ Usage Instructions
+##  Usage Instructions
 
 # Clone 
 ```
@@ -61,10 +61,10 @@ cd SYNGuard-Simulator
 ```
 sudo python3 sim.py
 ```
-## 📃 Note on SYN Flooding Simulation
+##  Note on SYN Flooding Simulation
 Instead of sending a fixed number of packets, our SYN flooding module uses multiple threads to simulate concurrent connection attempts—this approach better mimics a real-world DoS scenario where numerous machines or bots flood a server simultaneously. Thread-based simulation increases CPU/memory pressure on the server more realistically than simple looped packet spamming.
 
-## 📂 Directory Structure
+##  Directory Structure
 ```
 SYNGuard-Simulator/
 ├── sim.py               # Main launcher and interactive menu
@@ -72,7 +72,7 @@ SYNGuard-Simulator/
 └── README.md
 ```
 
-## 📌 NOTE:
+##  NOTE:
 If you're running this on a Linux system and want to avoid interference from the kernel's own SYN cookie mechanism, you can temporarily disable it using the following command:
 ```
 sudo sysctl -w net.ipv4.tcp_syncookies=0
@@ -85,5 +85,5 @@ To check current status:
 ```
 sysctl net.ipv4.tcp_syncookies
 ```
-## 👨‍💻 Authors
+##  Authors
 Haifa Nasser, Layan Alsuliman
