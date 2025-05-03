@@ -65,7 +65,25 @@ sudo python3 sim.py
 Instead of sending a fixed number of packets, our SYN flooding module uses multiple threads to simulate concurrent connection attempts—this approach better mimics a real-world DoS scenario where numerous machines or bots flood a server simultaneously. Thread-based simulation increases CPU/memory pressure on the server more realistically than simple looped packet spamming.
 
 ## 📂 Directory Structure
+```
 SYNGuard-Simulator/
-├── sim.py                # Main launcher and interactive menu
-├── Ourmethodology.png    # Diagram of enhanced TCP handshake
+├── sim.py               # Main launcher and interactive menu
+├── Ourmethodology.png   # Diagram of enhanced TCP handshake
 └── README.md
+```
+
+## 📌 NOTE:
+If you're running this on a Linux system and want to avoid interference from the kernel's own SYN cookie mechanism, you can temporarily disable it using the following command:
+```
+sudo sysctl -w net.ipv4.tcp_syncookies=0
+```
+To re-enable it after testing:
+```
+sudo sysctl -w net.ipv4.tcp_syncookies=1
+```
+To check current status:
+```
+sysctl net.ipv4.tcp_syncookies
+```
+## 👨‍💻 Authors
+Haifa Nasser, Layan Alsuliman
