@@ -49,7 +49,7 @@ SYN_Cookie = HMAC(Secret_Key, Client_IP || Client_Port || Timestamp)
 ```
 ## 🛠️ Usage Instructions
 
-# Clone repo
+# Clone 
 ```
 https://github.com/yourusername/SYNGuard-Simulator.git
 ```
