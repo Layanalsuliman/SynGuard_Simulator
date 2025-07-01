@@ -1,4 +1,4 @@
-#NOxSYN Simulator
+# NOxSYN Simulator
 
 NOxSYN Simulator is an educational tool designed to demonstrate an enhanced SYN cookie mechanism that resists SYN flooding attacks using a cryptographically secure nonce and HMAC. The simulator includes a menu-driven interface for starting the server, launching a SYN flood attack, initiating a legitimate TCP handshake, analyzing traffic, and monitoring behavior under denial-of-service conditions.
 
