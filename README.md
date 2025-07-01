@@ -1,6 +1,6 @@
-# SYNGuard Simulator
+#NOxSYN Simulator
 
-SYNGuard Simulator is an educational tool designed to demonstrate an enhanced SYN cookie mechanism that resists SYN flooding attacks using a cryptographically secure nonce and HMAC. The simulator includes a menu-driven interface for starting the server, launching a SYN flood attack, initiating a legitimate TCP handshake, analyzing traffic, and monitoring behavior under denial-of-service conditions.
+NOxSYN Simulator is an educational tool designed to demonstrate an enhanced SYN cookie mechanism that resists SYN flooding attacks using a cryptographically secure nonce and HMAC. The simulator includes a menu-driven interface for starting the server, launching a SYN flood attack, initiating a legitimate TCP handshake, analyzing traffic, and monitoring behavior under denial-of-service conditions.
 
 ---
 
@@ -12,7 +12,7 @@ SYNGuard Simulator is an educational tool designed to demonstrate an enhanced SY
 - **Ping a Target IP**: Useful for verifying network reachability.
 - **Show Host IP Address**: Displays the local IP address for server/client config.
 - **Analyze PCAP**: Parses .pcap files to verify SYN cookie validation.
-
+- **Run Nmap Scan**: Integrates basic Nmap scanning to probe open ports and services on a target for situational awareness during testing.
 ---
 
 ##  Educational Purpose
@@ -45,7 +45,7 @@ This tool is meant for cybersecurity students, researchers, and hobbyists lookin
 This simulator uses an HMAC-based SYN cookie computation of the form:
 
 ```python
-SYN_Cookie = HMAC(Secret_Key, Client_IP || Client_Port || Timestamp)
+SYN_Cookie = HMAC(Secret_Key, Client_IP || Client_Port || Timestamp || Nonce)
 ```
 - Server remains **stateless**
 - Nonce prevents **replay attacks**
